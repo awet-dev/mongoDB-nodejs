@@ -4,6 +4,7 @@ const Blog = require('./modules/blog')
 const dbURI = require('./config')
 
 const app = express();
+const x = 299;
 
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(()=> app.listen(9000))
